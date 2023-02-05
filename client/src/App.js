@@ -8,7 +8,8 @@ import CreateDogs from "./pages/CreateDogs/CreateDog";
 import DetailDogs from "./pages/DetailDogs/DetailDogs";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound404/notFound";
-
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:3001/";
 function App() {
   const { pathname } = useLocation();
   return (
